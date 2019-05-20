@@ -17,11 +17,12 @@ Node2 *CreateNode3()
     {
         NewNode->id = 1;
         getchar();
+        printf ("Enter your data:\n");
         fgets(s1, MAXLEN, stdin);
         slen=strlen(s1);
         s1[slen-1]='\0';
         slen=strlen(s1);
-        s2=simple_split(s1,slen,sep);//ïàìÿòü âûäåëÿåòñÿ â ôóíêöèè
+        s2=simple_split(s1,slen,sep);//Ã¯Ã Ã¬Ã¿Ã²Ã¼ Ã¢Ã»Ã¤Ã¥Ã«Ã¿Ã¥Ã²Ã±Ã¿ Ã¢ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨
         if(s2!=NULL)
         {
             NewNode->comp=struct_fill(s2);
